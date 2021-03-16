@@ -38,6 +38,22 @@ body{
 #consigue-epicgames-div{
     background-color: #0078F2;
 }
+#fortnite{
+    background-image: url("../images/fornais.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 70px;
+}
+#rogue{
+    background-image: url("../images/rogue.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#imagen-slider{
+    width: 800px;
+    height:500px;
+}
 .image{
     width: 200px;
     height: 100px;
@@ -60,6 +76,15 @@ body{
     width: 800px;
     height: 500px;
     background-image: url("../images/fornais.jfif");
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-size: cover;
+}
+.slide-image-rogue{
+    width: 800px;
+    height: 500px;
+    background-image: url("../images/rogue.webp");
     background-repeat: no-repeat;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
