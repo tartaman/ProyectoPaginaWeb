@@ -1,0 +1,87 @@
+body{
+    margin: 0 auto;
+    background: #121212;
+}
+#top-div{
+    display: flex;
+    flex-direction: row;
+    background: #2A2A2A ;
+    justify-content: space-between;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#top-div a {
+    text-decoration: none;
+    color:#B7B7B7;
+    font-size: 12px;
+}
+#tienda-div{
+    border-bottom: #0078F2 5px solid;
+    padding: 20px 20px;
+    margin: 0;
+}
+#logo{
+    width: auto;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: 500px;
+    flex-direction: column;
+    margin: auto 5px;
+}
+#consigue-epicgames{
+    color: white;
+}
+#consigue-epicgames-div{
+    background-color: #0078F2;
+}
+.image{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(24, 196, 184);
+}
+.header-div{
+    margin: 0px;
+    padding: 20px 20px;
+}
+.div-separar{
+    display: flex;
+    flex-direction: row;
+}
+.slide{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.slide-image{
+    width: 800px;
+    height: 500px;
+    background-color: rgb(196,184,24 );
+}
+
+
+
+
+
+
+.icon{
+    font-size: 20px;
+}
+.primer-div-header div:hover {
+    animation-name: bottomBorder;
+    animation-duration: 0.25s;
+    border-bottom: #0078F2 5px solid;
+}
+#buttons div:hover{
+    background-color: rgba(84, 251, 240, 0.8);
+}
+@keyframes bottomBorder {
+    20%{border-bottom: #0078F2 1px solid;}
+    40%{border-bottom: #0078F2 2px solid;}
+    60%{border-bottom: #0078F2 3px solid;}
+    80%{border-bottom: #0078F2 4px solid;}
+    100%{border-bottom: #0078F2 5px solid;}
+}
