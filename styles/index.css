@@ -30,7 +30,7 @@ body{
     width: auto;
     height: 500px;
     flex-direction: column;
-    margin: auto 5px;
+    margin: auto 0px;
 }
 #consigue-epicgames{
     color: white;
@@ -41,7 +41,7 @@ body{
 .image{
     width: 200px;
     height: 100px;
-    background-color: rgb(24, 196, 184);
+    background-color: #202020;
 }
 .header-div{
     margin: 0px;
@@ -59,11 +59,38 @@ body{
 .slide-image{
     width: 800px;
     height: 500px;
-    background-color: rgb(196,184,24 );
+    background-image: url("../images/fornais.jfif");
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-size: cover;
 }
-
-
-
+.content-center{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+.mini{
+    background: whitesmoke;
+    width: 50px;
+    height: 60px;
+    border-radius: 3px;
+}
+.texto-centro{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+    align-self: center;
+    margin: 0px 0px 0px 5px;
+}
+.red{
+    border-top-right-radius: 5px;
+}
+.smokey{
+    border-bottom-right-radius: 5px;
+}
 
 
 
@@ -72,11 +99,11 @@ body{
 }
 .primer-div-header div:hover {
     animation-name: bottomBorder;
-    animation-duration: 0.25s;
+    animation-duration: 0.15s;
     border-bottom: #0078F2 5px solid;
 }
-#buttons div:hover{
-    background-color: rgba(84, 251, 240, 0.8);
+.image:hover{
+    background-color: #4c4c4c;
 }
 @keyframes bottomBorder {
     20%{border-bottom: #0078F2 1px solid;}
