@@ -1,67 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Games Store | Official site</title>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b237c4e263.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-    <script src="./JS/app.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Hello, world!</title>
 </head>
 
-<body>    
+<body>
+  <div class="fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">(Logo)</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <header>
-        <div id="top-div">
-            <div class="div-separar primer-div-header">
-                <div id="logo" class="header-div">
-                    <a href="" id="logo"><i class="fas fa-gamepad icon"></i></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Juegos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                <div id="tienda-div" class="header-div">
-                    <a href="" id="tienda">TIENDA</a>
-                </div>
-                <div id="noticias-div" class="header-div">
-                    <a href="" id="noticias">NOTICIAS</a>
-                </div>
-                <div id="preguntas-frecuentes-div" class="header-div">
-                    <a href="" id="preguntas-frecuentes">PREGUNTAS FRECUENTES</a>
-                </div>
-            </div>
-            <div class="div-separar segundo-div-header">
-                <div id="lenguaje-div" class="header-div">
-                    <a href="" id="lenguaje"><i class="fas fa-globe icon"></i></a>
-                </div>
-                <div id="iniciar-sesion-div" class="header-div">
-                    <a href="" id="iniciar-sesion"><i class="fas fa-user-plus icon"></i> INICIAR SESIÓN</a>
-                </div>
-                <div id="consigue-epicgames-div" class="header-div">
-                    <a href="" id="consigue-epicgames">CONSIGUE EPIC GAMES</a>
-                </div>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1>¡Hola Gamer!</h1>
+          <p style="font-size: 25px;">Bienvenido seas a esta página web de videojuegos en la cual podrás jugar algunos videojuegos que hemos creado para ti.</p>
         </div>
-        <div>
-        </div>
-    </header>
-    <div class="slide">
-        <div class="slide-image" id="slider"><img src="./images/fornais.jfif" alt="" id="imagen-slider"></div>
-        <div id="buttons">
-            <div class="image red" onclick="rojo()">
+      </div>
+
+      <div class="slide container" style="justify-content: start;">
+        <div class="slide-image container-fluid" id="slider"><img src="./images/fornais.jfif" alt="" id="imagen-slider"></div>
+        <div id="buttons" class="container-fluid">
+            <div class="image red container" onclick="rojo()" data-toggle="popover" title="Fortnite" data-content="Fortnite es un juego...">
                 <div class="content-center">
                     <div class="mini" id="fortnite">
-
                     </div>
                     <div class="texto-centro">
                         Fortnite
                     </div>
                 </div>
             </div>
-            <div class="image blue" onclick="azul()">
+            <div class="image blue container" data-toggle="popover" title="Rogue Company" data-content="Rogue company es un...">
                 <div class="content-center">
                     <div class="mini" id="rogue">
 
@@ -71,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="image green" onclick="verde()">
+            <div class="image green container" onclick="verde()" data-toggle="popover" title="Loop hero" data-content="Loop hero es...">
                 <div class="content-center">
                     <div class="mini" id="loop-hero">
 
@@ -81,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="image white" onclick="blanco()">
+            <div class="image white container" onclick="blanco()" data-toggle="popover" title="Primordials" data-content="Primordials tiene como objetivo...">
                 <div class="content-center">
                     <div class="mini" id="primordials">
 
@@ -92,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="image pink" onclick="rosa()">
+            <div class="image pink container" onclick="rosa()" data-toggle="popover" title="Kena: Bridge of Spirits" data-content="Este juego trata de...">
                 <div class="content-center">
                     <div class="mini" id="kena">
 
@@ -103,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="image smokey" onclick="grisesito()">
+            <div class="image smokey container" onclick="grisesito()" data-toggle="popover" title="Hitman 3" data-content="Hitman 3 es un juego de acción en el cual...">
                 <div class="content-center">
                     <div class="mini" id="hitman">
 
@@ -115,6 +137,50 @@
             </div>
         </div>
     </div>
+
+      <div class="row">
+        <div class="col">
+          <h1>Pie de página</h1>
+          <p style="font-size: 25px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed vel sequi velit, adipisci dolore accusantium
+            porro perspiciatis ipsum, tempore fugit, sit necessitatibus quaerat numquam maiores! Soluta voluptates nobis
+            nostrum pariatur?</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -9,22 +9,28 @@ window.addEventListener('load', function() {
     
     var indiceImagenes = 0;
 
-    var tiempo = 1000;
+    var tiempo = 3000;
 
     function cambiarimagenes() {
 
         document.getElementById("imagen-slider").src = imagenes[indiceImagenes];
 
-        if (indiceImagenes < 2 ) {
+        if (indiceImagenes < 1 ) {
             indiceImagenes++;
         } else{
             indiceImagenes = 0;
         }    
         
-
     }
 
     setInterval(cambiarimagenes, tiempo);
 
-
+    
 });
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
