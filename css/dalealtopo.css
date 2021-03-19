@@ -1,0 +1,27 @@
+.cuadro{
+    width: 100px;
+    height: 100px;
+    border: black 1px solid;
+}
+#tablero{
+    display: flex;
+    width: 425px;
+    height: 425px;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#centrar{
+    display: flex;
+    justify-content: center;
+}
+.topo{
+    background-image: url(../images/Dugtrio_alolan.png);
+    background-size: cover;
+}
+#dale{
+    margin-bottom: 25px;;
+}
+#Iniciar{
+    font-size: 20px;
+}
