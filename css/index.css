@@ -1,8 +1,4 @@
-img{
-    width: 100px;
-    height: 400px;
-}
-.carousel{
+#carousel{
     margin: 50px auto;
     justify-self: center;
 }
