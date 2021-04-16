@@ -1,3 +1,49 @@
 .card{
     margin: 32px auto;
 }
+.animar {
+    animation-duration: 2s;
+    animation-name: a;
+    animation-fill-mode: forwards;
+}
+.atext {
+    animation-duration: 2s;
+    animation-name: atext;
+    animation-fill-mode: forwards;
+}
+.animage{
+    animation-duration: 2s;
+    animation-name: animage;
+    animation-fill-mode: forwards;
+}
+.abutton{
+    animation-duration: 2s;
+    animation-name: abutton;
+    animation-fill-mode: forwards;
+}
+.load {
+    animation-duration: 2s;
+    animation-name: load;
+    animation-fill-mode: forwards;
+}
+@keyframes load {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes abutton {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes animage {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes atext {
+    0%{color: rgba(255, 255, 255, 0);}
+    100%{color: rgba(255, 255, 255, 1);}
+}
+
+@keyframes a {
+    0%{background-color: #343a4000;}
+    100%{background-color: #343A40;}
+}
