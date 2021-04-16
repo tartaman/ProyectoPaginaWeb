@@ -45,8 +45,7 @@ document.getElementById("Iniciar").addEventListener("mousedown", function inicio
         }
         if (tiempoActual === 0) {
             clearInterval(idTiempo)
-            alert('Se te acabó el tiempo, tu puntuación fue de: ' + resultado)
-
+            alert('Se te acabó el tiempo, tu puntuación fue de: ' + resultado)        
         }
 
     }
