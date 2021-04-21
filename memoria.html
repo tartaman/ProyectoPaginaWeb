@@ -13,7 +13,7 @@
 </head>
 
 <body style="background-color: #010101;">
-    <div class="collapse" id="navbarToggleExternalContent">
+    <div class="collapse bg-dark" id="navbarToggleExternalContent">
         <div class="p-4 bg-dark">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
                 <a class="navbar-brand" href="#" ><object data="./images/logo.svg" type="image/svg+xml"></object></a>
@@ -57,15 +57,26 @@
     </nav>
     <h3 class="text-white">Puntuación:<span id="result"></span></h3>
     <div class="grid container border bg-light"></div>
-    <div class="container-fluid">
-        <button type="button" class="btn btn-dark col-12" id="button"><b><i>Para iniciar haz click aquí</i></b></button>
-    </div>
 
 
 
 
+    <a href="https://youtube.com" id="youtubeLink">Youtube</a>
+    <p>
+        enable link: <input type="checkbox" id="cb">
+    </p>
+    <script type="text/javascript">
+    const ytLink = document.getElementById("youtubeLink");
+    const cb = document.getElementById('cb');
 
-    
+    ytLink.addEventListener('click', function(e){
+        if (!cb.checked){
+        e.preventDefault()
+        } else {
+
+        }
+    });
+    </script>
     <script src="./js/memoria.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
