@@ -73,7 +73,7 @@ function crearTablero() {
         carta.addEventListener('click', voltearCarta)
         grid.appendChild(carta)
     }
-
+    
 }
 crearTablero()
 

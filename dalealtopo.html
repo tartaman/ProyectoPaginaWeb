@@ -15,48 +15,41 @@
 </head>
 
 <body style="background-color: #010101;">
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand" href="#"><object data="./images/logo.svg" type="image/svg+xml"></object></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-toggle="dropdown" aria-expanded="false">
-                                Juegos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="./dalealtopo.html">Dale al topo</a></li>
-                                <li><a class="dropdown-item" href="./memoria.html">Memorama</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="otroJuego.html">Otro Juego</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <a class="navbar-brand" href="#"><object data="./images/logo.svg" type="image/svg+xml"></object></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+          data-toggle="dropdown" aria-expanded="false">
+            Juegos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./dalealtopo.html">Dale al topo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./memoria.html">Memorama</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./otroJuego.html">otros juegos</a>
+          </div>
+        </li>
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
+  </nav>
     <div class="container-fluid text-center" style="background-color: #010101;">
         <h1 class="text-white">Dale al topo!</h1>
         <h4 class="text-white">Bienvenido a dale al topo en este juego <br>te recomendamos quitarle un poco de zoom a tu navegador<br> para
