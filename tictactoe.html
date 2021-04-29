@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/tictactoe.css">
+    <title>TicTacToe!</title>
+    <script src="https://kit.fontawesome.com/b7e92e4efe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><object data="./images/logo.svg" type="image/svg+xml"></object></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Juegos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./dalealtopo.html">Dale al topo</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./memoria.html">Memorama</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./tictactoe.html">Tic-tac-toe</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./otroJuego.html">otros juegos</a>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+    </nav>
+
+    <div class="tablero" id="tablero">
+        <div class="celda  x border-bottom border-right border-dark" data-cell></div>
+
+        <div class="celda  border border-top-0 border-dark" data-cell></div>
+
+        <div class="celda  border-bottom border-left border-dark" data-cell></div>
+
+        <div class="celda  border border-left-0 border-dark" data-cell></div>
+
+        <div class="celda  border border-dark" data-cell></div>
+
+        <div class="celda  border border-right-0 border-dark" data-cell></div>
+
+        <div class="celda  border-top border-right border-dark" data-cell></div>
+
+        <div class="celda  border border-bottom-0 border-dark" data-cell></div>
+
+        <div class="celda  border-left border-top border-dark" data-cell></div>
+    </div>
+
+
+<div class="mensajeVictoria" id="mensajeVictoria">
+    <div data-texto-mensaje-victoria></div>
+    <div class="container-fluid">
+        <div class="row">
+             <button class="btn btn-primary mx-auto" id="botonReiniciar">Reiniciar</button>
+        </div>
+       
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid bg-dark rounded" style="padding: 20px; margin-top: 30px;">
+        <div class="row">
+            <div class="col-4 border-right border-light p-4">
+                <div class="container text-center">
+                    <h4 class="text-white mx-auto">Redes sociales:</h4>
+                </div>
+                <div class="container d-flex flex-column justify-content-around">
+                    <div class="container d-flex">
+                        <div class="container">
+                            <a href="" class="text-light" style="font-size: 30px;"><i
+                                    class="fab fa-twitter-square"></i>&nbspTwitter</a>
+                        </div>
+                        <div class="container">
+                            <a href="https://www.facebook.com/profile.php?id=100004818854324" class="text-light"
+                                style="font-size: 30px;"><i class="fab fa-facebook-square"></i>&nbspFacebook</a>
+                        </div>
+                    </div>
+                    <div class="container d-flex">
+                        <div class="container">
+                            <a href="" class="text-light" style="font-size: 28.5px;"><i
+                                    class="fab fa-instagram-square"></i>&nbspInstagram</a>
+                        </div>
+                        <div class="container">
+                            <a href="" class="text-light" style="font-size: 30px;"><i
+                                    class="fab fa-pinterest-square"></i>&nbspPinterest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 border-left border-right border-light">
+                <div class="container text-center">
+                    <h4 class="text-light">Terminos y condiciones:</h4>
+                </div>
+                <div>
+                    <p class="text-light">AUVEC<i class="fa fa-copyright" aria-hidden="true"></i> All rigths reserved
+                    </p>
+                    <a href="" class="link text-light btn btn-primary" id="terms" data-toggle="modal"
+                        data-target="#exampleModal">Terms and conditions</a>
+                </div>
+
+            </div>
+            <div class="col-4 border-left border-light">
+                <div class="container text-center">
+                    <a class="navbar-brand" href="#"><object data="./images/logo.svg"
+                            type="image/svg+xml"></object></a><br>
+                    <h4 class="text-white mx-auto">Contactanos:</h4>
+                </div>
+                <div class="container">
+                    <p class="text-light">Victor Alberto Escalante Alpuche</p>
+                    <p class="text-light">(+52) 9818290295</p>
+                    <p class="text-white">victor.ealpuche@prepafrayangelico.edu.mx</p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="container">
+                <h6 class="text-light">Esta página se ha elaborado por Augusto Gordillo Gomez y Victor Alberto Escalante
+                    Alpuche,
+                    del 4to Semestre Grupo "B".</h6>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TITULO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="./js/tictactoe.js"></script>
+</body>
+
+</html>
