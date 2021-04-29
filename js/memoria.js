@@ -73,7 +73,7 @@ function crearTablero() {
         carta.addEventListener('click', voltearCarta)
         grid.appendChild(carta)
     }
-    
+
 }
 crearTablero()
 
@@ -82,14 +82,14 @@ function verIguales() {
     var cartas = document.querySelectorAll('img')
     const opcionUnoId = cartaEscogidaId[0]
     const opcionDosId = cartaEscogidaId[1]
-   
+
     if (cartaEscogida[0] === cartaEscogida[1]) {
         alert("encontraste un par!!!")
         cartas[opcionUnoId].setAttribute('class', 'd-none')
         cartas[opcionDosId].setAttribute('class', 'd-none')
         cartasGanadas.push(cartaEscogida)
     } else {
-        
+
         cartas[opcionUnoId].setAttribute('src', 'Imagenes/Atrás.png')
         cartas[opcionDosId].setAttribute('src', 'Imagenes/Atrás.png')
         alert('Par incorrecto, intente de nuevo')
@@ -111,10 +111,9 @@ function voltearCarta(e) {
     cartaEscogidaId.push(cardId)
     this.setAttribute('src', arrayCartas[cardId].img)
     console.log(e)
-    if (cartaEscogida.length === 2 ){
+    if (cartaEscogida.length === 2) {
         setTimeout(verIguales, 500)
-    } else if (arrayCartas[cartaEscogidaId] == arrayCartas[cartaEscogidaId]){
+    } else if (arrayCartas[cartaEscogidaId] == arrayCartas[cartaEscogidaId]) {
         e.preventDefault()
     }
-
 }
