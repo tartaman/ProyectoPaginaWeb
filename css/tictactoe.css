@@ -20,28 +20,78 @@ body {
     align-items: center;
     grid-template-columns: repeat(3, auto);
 }
+.celda.x,
+.celda.circulo{
+    cursor: not-allowed;
+}
+
+.celda.x::before,
+.celda.x::after {
+background-color: black;
+}
+
+.celda.circulo 
 
 .celda{
     width: var(--cell-size);
     height: var(--cell-size);
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+
+
+.tablero.x .celda:not(.x):not(.circulo):hover::before,
+.tablero.x .celda:not(.x):not(.circulo):hover::after {
+    background-color: lightgrey;
 }
 
 .celda.x::before,
-.celda.x::after {
+.celda.x::after,
+.tablero.x .celda:not(.x):not(.circulo):hover::before,
+.tablero.x .celda:not(.x):not(.circulo):hover::after {
     content: '';
     width: calc(var(--mark-size)*.15);
     height: var(--mark-size);
     position: absolute;
-    background-color: black;
 }
 
-.celda.x::before {
+.celda.x::before,
+.tablero.x .celda:not(.x):not(.circulo):hover::before {
     transform: rotate(45deg);
 }
 
-.celda.x::after {
+.celda.x::after,
+.tablero.x .celda:not(.x):not(.circulo):hover::after {
     transform: rotate(-45deg);
+}
+
+
+.celda.circulo::before,
+.celda.circulo::after,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::before,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.celda.circulo::before,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::before
+ {
+    width: var(--mark-size);
+    height: var(--mark-size);
+    background-color: black;
+}
+
+.celda.circulo::after ,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::after {
+
+    width: calc(var(--mark-size)*.7);
+    height: calc(var(--mark-size)*.7);
+    background-color: white;
 }
