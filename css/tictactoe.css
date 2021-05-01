@@ -26,11 +26,11 @@ body {
 }
 
 .celda.x::before,
-.celda.x::after {
+.celda.x::after, 
+.celda.circulo::before {
 background-color: black;
 }
 
-.celda.circulo 
 
 .celda{
     width: var(--cell-size);
@@ -45,7 +45,8 @@ background-color: black;
 
 
 .tablero.x .celda:not(.x):not(.circulo):hover::before,
-.tablero.x .celda:not(.x):not(.circulo):hover::after {
+.tablero.x .celda:not(.x):not(.circulo):hover::after,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::before {
     background-color: lightgrey;
 }
 
@@ -85,8 +86,7 @@ background-color: black;
  {
     width: var(--mark-size);
     height: var(--mark-size);
-    background-color: black;
-}
+ }
 
 .celda.circulo::after ,
 .tablero.circulo .celda:not(.x):not(.circulo):hover::after {
@@ -94,4 +94,25 @@ background-color: black;
     width: calc(var(--mark-size)*.7);
     height: calc(var(--mark-size)*.7);
     background-color: white;
+}
+
+.mensajeVictoria {
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content:center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.mensajeVictoria .btn.btn-primary{
+    font-size: 3rem;
+}
+
+.mensajeVictoria.mostrar {
+    display: flex;
 }

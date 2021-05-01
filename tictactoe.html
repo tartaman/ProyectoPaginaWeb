@@ -52,10 +52,10 @@
         </div>
     </nav>
 
-    <div class="tablero x" id="tablero">
-        <div class="celda  x border-bottom border-right border-dark" data-cell></div>
+    <div class="tablero" id="tablero">
+        <div class="celda border-bottom border-right border-dark" data-cell></div>
 
-        <div class="celda circulo border border-top-0 border-dark" data-cell></div>
+        <div class="celda border border-top-0 border-dark" data-cell></div>
 
         <div class="celda  border-bottom border-left border-dark" data-cell></div>
 
@@ -73,17 +73,11 @@
     </div>
 
 
-<div class="mensajeVictoria" id="mensajeVictoria">
-    <div data-texto-mensaje-victoria></div>
-    <div class="container-fluid">
-        <div class="row">
-             <button class="btn btn-primary mx-auto" id="botonReiniciar">Reiniciar</button>
-        </div>
-       
-    </div>
-    
+<div class="mensajeVictoria flex-column" id="mensajeVictoria">
+    <div data-texto-mensaje-victoria class="text-light"></div>
+    <button class="btn btn-primary" id="botonReiniciar" onclick="iniciarJuego()">Reiniciar</button>
 </div>
-
+  <script src="./js/tictactoe.js"></script>
 
 
 
@@ -219,7 +213,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-    <script src="./js/tictactoe.js"></script>
+  
 </body>
 
 </html>
