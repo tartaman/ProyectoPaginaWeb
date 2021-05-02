@@ -15,7 +15,7 @@ const tablero = document.getElementById('tablero')
 const divTextoVictoria = document.getElementById('mensajeVictoria')
 const botonReiniciar = document.getElementById('botonReiniciar')
 const textoVictoria = document.querySelector('[data-texto-mensaje-victoria]')
-let turnoCirculo
+let turnoCirculo;
 
 iniciarJuego()
 
@@ -25,7 +25,7 @@ function iniciarJuego() {
         celda.classList.remove(clase_x)
         celda.classList.remove(clase_circulo)
         celda.removeEventListener('click', hizoClick)
-        return celda.addEventListener('click', hizoClick, { once: true })
+        celda.addEventListener('click', hizoClick, { once: true })
     })
     hover()
     divTextoVictoria.classList.remove('mostrar')
