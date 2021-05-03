@@ -1,0 +1,118 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size)*.9)
+}
+.tablero {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+.celda.x,
+.celda.circulo{
+    cursor: not-allowed;
+}
+
+.celda.x::before,
+.celda.x::after, 
+.celda.circulo::before {
+background-color: black;
+}
+
+
+.celda{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.tablero.x .celda:not(.x):not(.circulo):hover::before,
+.tablero.x .celda:not(.x):not(.circulo):hover::after,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::before {
+    background-color: lightgrey;
+}
+
+.celda.x::before,
+.celda.x::after,
+.tablero.x .celda:not(.x):not(.circulo):hover::before,
+.tablero.x .celda:not(.x):not(.circulo):hover::after {
+    content: '';
+    width: calc(var(--mark-size)*.15);
+    height: var(--mark-size);
+    position: absolute;
+}
+
+.celda.x::before,
+.tablero.x .celda:not(.x):not(.circulo):hover::before {
+    transform: rotate(45deg);
+}
+
+.celda.x::after,
+.tablero.x .celda:not(.x):not(.circulo):hover::after {
+    transform: rotate(-45deg);
+}
+
+
+.celda.circulo::before,
+.celda.circulo::after,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::before,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.celda.circulo::before,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::before
+ {
+    width: var(--mark-size);
+    height: var(--mark-size);
+ }
+
+.celda.circulo::after ,
+.tablero.circulo .celda:not(.x):not(.circulo):hover::after {
+
+    width: calc(var(--mark-size)*.7);
+    height: calc(var(--mark-size)*.7);
+    background-color: white;
+}
+
+.mensajeVictoria {
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content:center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.mensajeVictoria .btn.btn-primary{
+    font-size: 3rem;
+}
+
+.mensajeVictoria.mostrar {
+    display: flex;
+}
